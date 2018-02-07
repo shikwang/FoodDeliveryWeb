@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="css/checkOut.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="Homepage.html" class="active">Home</a>
+        <a href="Restaurants.html">Restaurants</a>
+        <a href="MyCart.html">My Cart</a>
+        <a href="trackMealPage.html">My Order</a>
+        <a href="Signin.html">Sign In</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <header>
+        <h1>Check Out</h1>
+    </header>
+    <div class="container">
+        <label><b>Card Number</b></label>
+        <input type="text" placeholder="Enter card number" name="card_num" style="width:250px;height:30px;" required /><br />
+        <label><b>PIN</b></label>
+        <input type="password" placeholder="Enter PIN" name="pin" style="width:250px;height:30px;" required /><br />
+        <label><b>Shipment Address</b></label>
+        <input type="text" placeholder="Enter your address" name="ship_address" style="width:250px;height:30px;" required /><br />
+        <label><b>Billing Address</b></label>
+        <input type="text" placeholder="Enter bill address" name="bill_address" style="width:250px;height:30px;" required />
+    </div>
+    <a href="ThankyouOrder.html"><button onclick="">Confirm Order</button></a><br />
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/SignIn.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="Homepage.html" class="active">Home</a>
+        <a href="Restaurants.html">Restaurants</a>
+        <a href="MyCart.html">My Cart</a>
+        <a href="trackMealPage.html">My Order</a>
+        <a href="Signin.html">Sign In</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <header>
+        <h1>Sign In</h1>
+    </header>
+    <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" style="width:250px;height:30px;" required /><br />
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" style="width:250px;height:30px;" required /><br />
+        Sign In as a restaurant: <input type="checkbox" id="myCheck">
+    </div>
+
+    <button onclick="return checkSignin()">Login</button>
+    <button OnClick=" location.href='Signup.html' ">Sign Up</button><br />
+    <button type="button" OnClick=" location.href='Homepage.html' " class="returntohomebtn">Return to Homepage</button>
+
+    <script>
+        function checkSignin() {
+            var isChecked = document.getElementById("myCheck").checked;
+            if (isChecked) {
+                location.href = "HomepageOwner.html";
+            }
+            else {
+                location.href = "Homepage.html";
+            }
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
+</body>
+</html>

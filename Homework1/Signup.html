@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/SignUp.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="Homepage.html" class="active">Home</a>
+        <a href="Restaurants.html">Restaurants</a>
+        <a href="MyCart.html">My Cart</a>
+        <a href="trackMealPage.html">My Order</a>
+        <a href="Signin.html">Sign In</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" style="width:250px;height:30px;" required /><br />
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" style="width:250px;height:30px;" required /><br />
+        <label><b>Confirm Password</b></label>
+        <input type="password" placeholder="Enter Password" name="confirm_psw" style="width:250px;height:30px;" required /><br />
+        <label><b>Email Address</b></label>
+        <input type="text" placeholder="Enter e-mail" name="e_mail" style="width:250px;height:30px;" required /><br />
+        <label><b>Home Address</b></label>
+        <input type="text" placeholder="Enter home address" name="home_addr" style="width:250px;height:30px;" required /><br />
+        <label><b>Phone Number</b></label>
+        <input type="text" placeholder="Enter phone number" name="phone_num" style="width:250px;height:30px;" required /><br />
+        Sign Up as a restaurant: <input type="checkbox" id="myCheck">
+    </div>
+    <button OnClick= "return checkSignUp()">Confirm</button><br />
+    <script>
+        function checkSignUp() {
+            var isChecked = document.getElementById("myCheck").checked;
+            if (isChecked) {
+                location.href = "HomepageOwner.html";
+            }
+            else {
+                location.href = "ThankyouSignUp.html";
+            }
+        }
+
+
+
+
+
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/Menu.css">
+</head>
+
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="HomepageOwner.html" class="active">Home</a>
+        <a href="MenuOwner.html">Menu</a>
+        <a href="OrderOwner.html">Order Management</a>
+        <a href="Signin.html">Sign In</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <header>
+        <h1>Menu</h1>
+    </header>
+    <div class="floating-box">
+        <img src="./images/Benedict.png" alt="Benedict" style="width:200px;height:160px">
+        <h2> Golden State Benedict  </h2>
+        <h3> Toasted muffin with smoked bacon and two poached eggs topped with hollandaise sauce and Sriracha </h3>
+        <h4> $20 </h4>
+        <button>Edit</button>
+    </div>
+    <div class="floating-box">
+        <img src="./images/Pizza.png" alt="Pizza" style="width:200px;height:160px">
+        <h2> Pineapple Chicken Luau  </h2>
+        <h3> Tasty Blend of KC Masterpiece BBQ Sauce, Grilled Chicken, Dole Pineapple, and Real Bacon </h3>
+        <h4> $23 </h4>
+        <button>Edit</button>
+    </div>
+    <div class="floating-box">
+        <img src="./images/Burger.png" alt="Burger" style="width:200px;height:160px">
+        <h2> Good Morning Burger  </h2>
+        <h3>Two fried eggs, applewood-smoked bacon, cheddar cheese, lettuce, tomato and mayo </h3>
+        <h4>$15</h4>
+        <button>Edit</button>
+    </div>
+    <div class="floating-box">
+        <img src="./images/HotPot.png" alt="HotPot" style="width:200px;height:160px">
+        <h2> Sizzling Pot  </h2>
+        <h3> All pots come with side dishes of potato, celery, cauliflower, and soybean sprout </h3>
+        <h4>$31</h4>
+        <button>Edit</button>
+
+    </div>
+    <div class="floating-box">
+        <img src="./images/Ramen.png" alt="Ramen" style="width:200px;height:160px">
+        <h2> Black Edition Ramen  </h2>
+        <h3> Fermented with organic garlic oil and roasted with natural bincho charcoal for 18 hours </h3>
+        <h4>$16</h4>
+        <button>Edit</button>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Homepage Owner</title>
+    <link rel="stylesheet" href="css/Homepage.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="HomepageOwner.html" class="active">Home</a>
+        <a href="MenuOwner.html">Menu</a>
+        <a href="OrderOwner.html">Order Management</a>
+        <a href="Signin.html">Sign In</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <h1>
+        Welcome Owner...
+    </h1>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+</html>

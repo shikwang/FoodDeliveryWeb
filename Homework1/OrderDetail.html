@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Order Detail</title>
+    <link rel="stylesheet" href="css/MyCart.css">
+</head>
+
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="HomepageOwner.html" class="active">Home</a>
+        <a href="MenuOwner.html">Menu</a>
+        <a href="OrderOwner.html">Order Management</a>
+        <a href="Signin.html">Sign In</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <header>
+        <h1>Order Detail</h1>
+    </header>
+
+    <h4 style="text-align:left">Order ID: #</h4>
+    <div style="overflow-x:auto;">
+        <table class="center">
+            <tr>
+                <th></th>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td style="width:400px"><img src="./images/Benedict.png" alt="Benedict" style="width:250px;height:200px"></td>
+                <td>Golden State Benedict</td>
+                <td>$ 20</td>
+                <td><input type="number" min="1" max="100" value="1"></td>
+            </tr>
+            <tr>
+                <td><img src="./images/Ramen.png" alt="Ramen" style="width:250px;height:200px"></td>
+                <td>Black Edition Ramen</td>
+                <td>$ 16 </td>
+                <td><input type="number" min="1" max="100" value="1"></td>
+            </tr>
+            <tr>
+                <td><img src="./images/Pizza.png" alt="Pizza" style="width:250px;height:200px"></td>
+                <td>Pineapple Chicken Luau</td>
+                <td>$ 23</td>
+                <td><input type="number" min="1" max="100" value="1"></td>
+            </tr>
+        </table>
+        <!-- <footer style="text-align:right margin-left:15%">Total Price: $59</footer> -->
+        <!-- <h3>Total Price: $59</h3> -->
+    </div>
+
+    <button OnClick=" location.href='OrderOwner.html' ">Accpet</button>
+    <button class = "decline" OnClick=" location.href='OrderOwner.html' ">Decline</button>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+
